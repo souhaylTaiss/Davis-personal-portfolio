@@ -26,9 +26,13 @@ body {
   height: 400px;
   background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  flex-flow: column nowrap;
 }
+
 .flex div {
   width: 100px;
   height: 100px;
