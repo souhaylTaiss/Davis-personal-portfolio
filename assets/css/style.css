@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+}
+
+.border {
+  width: 400px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left:calc(-400px / 2);
+  margin-top:calc(-100px / 2);
+}
+
+.mix {
+  width: 500px;
+  height: 400px;
+  background-image: url(../images/pexels-project-lakbay-436508062-15571721.jpg),url(../images/splash-149961_1920.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+.flex {
+  width: 700px;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex div {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin: 10px;
+}
