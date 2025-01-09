@@ -33,9 +33,3 @@ body {
   flex-flow: column nowrap;
 }
 
-.flex div {
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  margin: 10px;
-}
