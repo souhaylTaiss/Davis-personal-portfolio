@@ -30,9 +30,3 @@ body {
   align-items: center;
 }
 
-.flex div {
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  margin: 10px;
-}
