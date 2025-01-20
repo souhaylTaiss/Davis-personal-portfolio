@@ -1,32 +1,91 @@
+/*
+ * This CSS file provides the styles for the web application.
+ * It includes layout, typography, color schemes, and responsive design rules.
+ * The styles are organized into sections for better readability and maintainability.
+ * 
+ * Sections:
+ * 1. Reset and Base Styles
+ * 2. Typography
+ * 3. Layout
+ * 4. Components
+ * 5. Utilities
+ * 
+ * Author: [Souhayl Taiss]
+ * Date: [20-01-2025]
+ */
+
+/* 1. Reset and Base Styles */
+/* Reset the browser's default styles */
+* {
+  --primary-color: #fec544;
+  --secondary-color: white;
+  --tertiary-color: #a9adb8;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: #0a101e;
+  color: var(--secondary-color);
 }
 
-.border {
-  width: 400px;
-  height: 100px;
-  background-color: black;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-left:calc(-400px / 2);
-  margin-top:calc(-100px / 2);
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.mix {
-  width: 500px;
-  height: 400px;
-  background-image: url(../images/pexels-project-lakbay-436508062-15571721.jpg),url(../images/splash-149961_1920.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: screen;
+ul {
+  list-style-type: none;
 }
-.flex {
-  width: 700px;
-  height: 400px;
-  background-color: black;
-  display: flex;
-  justify-content: center;
+ 
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+header .container{
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 20px 15px;
   align-items: center;
+  justify-items: end;
 }
 
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+}
+
+header nav ul li {
+  padding-right: 45px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.call {
+  padding-left: 45px;
+  color: var(--primary-color);
+  position: relative;
+}
+.call::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 15px;
+  background-color: var(--secondary-color);
+}
