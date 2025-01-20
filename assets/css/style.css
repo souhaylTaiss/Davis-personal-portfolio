@@ -79,6 +79,7 @@ header nav ul li {
   color: var(--primary-color);
   position: relative;
 }
+
 .call::before {
   content: "";
   position: absolute;
@@ -88,4 +89,7 @@ header nav ul li {
   width: 1px;
   height: 15px;
   background-color: var(--secondary-color);
+}
+.call i {
+  
 }
