@@ -60,6 +60,44 @@ img {
   height: auto;
 }
 
+.title {
+  margin: 100px auto;
+  text-align: center;
+}
+.title h2 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  position: relative;
+}
+.title h2::before {
+  content: "";
+  width: 173px;
+  height: 2px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3f3f40;
+}
+.title h2::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+}
+.title h3 {
+  font-size: 90px;
+  opacity: 0.1;
+  color: #606060;
+  text-transform: uppercase;
+  transform: translateY(-28px);
+}
 .active {
   color: var(--primary-color);
 }
@@ -204,4 +242,84 @@ header nav ul li:hover a {
 }
 .hero-section .img-container .social-media a:where(:hover, .active) {
   width: 140px;
+}
+
+/* Start about section */
+.about .deteals {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 60px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.about .deteals .image-box {
+  width: 510px;
+  height: 550px;
+}
+.about .deteals .image-box img {
+  object-fit: cover;
+  height: 100%;
+}
+.about .deteals .description h3 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 22px;
+}
+.about .deteals .description h4 {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: normal;
+  margin-bottom: 22px;
+}
+.about .deteals .description p {
+  color: var(--tertiary-color);
+  line-height: 1.4;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
+}
+.about .deteals .description ul {
+  color: var(--tertiary-color);
+  margin-bottom: 70px;
+}
+.about .deteals .description ul li {
+  margin-bottom: 22px;
+}
+.about .deteals .description ul li span:first-child {
+  display: inline-block;
+  width: 150px;
+}
+.about .deteals .description ul li span:last-child {
+  margin-left: 15px;
+}
+.about .deteals .description a {
+  padding: 14px 38px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: black;
+  border-radius: 25px;
+}
+
+/* Start services section */
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px,387px));
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.services .box-container .box {
+  background-color: var(--tertiary-color);
+  background-color: #101624;
+  border: 1px solid var(--tertiary-color);
+  text-align: center;
+  padding: 20px;
+}
+.services .box-container .box .icon-box svg {
+  fill: var(--tertiary-color);
+  width: 40px;
+}
+.services .box-container .box h3 {
+}
+.services .box-container .box p {
+  color: var(--tertiary-color);
 }
