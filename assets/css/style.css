@@ -33,7 +33,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-bg-color);
@@ -179,6 +181,7 @@ header nav ul li:hover a {
 header .container .burger-menu  { 
   display: none;
   cursor: pointer;
+  height: 16px;
 }
 header .container .burger-menu span {
   width: 30px;
@@ -186,6 +189,7 @@ header .container .burger-menu span {
   background-color: #656668;
   position: relative;
   display: block;
+  margin-top: 8px;
 }
 header .container .burger-menu span::before {
   content: "";
@@ -223,6 +227,9 @@ header .container .burger-menu span::after {
     border-top: 1px solid rgb(19 26 42);
     border-bottom: 1px solid rgb(19 26 42);
     transition: .4s;
+  }
+  header .container nav.show {
+    height: 270px;
   }
   header .container nav ul {
     grid-template-columns: auto;
@@ -299,11 +306,11 @@ header .container .burger-menu span::after {
   object-fit: cover;
 }
 .social-container {
-  width: fit-content;
+  width: 450px;
   background: #101624;
   position: relative;
   bottom: 121px;
-  right: 481px;
+  right: 450px;
   border-radius: 55px 0 0 55px;
   border: 1px solid #3f3f40;
   border-right: none;
@@ -337,7 +344,7 @@ header .container .burger-menu span::after {
 .social-media span:last-child {
   color: white;
 }
-.social-media a:where(:hover, .active) {
+.social-media a.active {
   width: 140px;
 }
 @media (max-width:990px) {
@@ -354,7 +361,6 @@ header .container .burger-menu span::after {
   }
   .hero-section h1 {
     width: fit-content;
-    font-size: 90px;
     margin-bottom: 30px;
   }
   .hero-section p {
